@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>새로운 단어 추가 페이지</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select {
+      width: 35%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 20%;
+    }
+
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>새로운 단어 추가 페이지</h1>
+  <form action="/action_page.php" method="post" onsubmit="return checkform()">
+    <label for="word">단어 입력 :</label>
+    <input type="text" id="word" name="word" size="20">
+    <label for="select">단어의 난이도 입력 1 ~ 3 범위 중 선택 가능:</label>
+    <select id="select" name="select">
+      <option value="">선택하세요</option>
+      <option value="level 1">level 1</option>
+      <option value="level 2">level 2</option>
+      <option value="level 3">level 3</option>
+    </select>
+    <label for="meaning">뜻 입력 :</label>
+    <input type="text" id="meaning" name="meaning" size="20">
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<script>
+  function checkform() {
+    event.preventDefault();
+    var word = document.getElementById("word").value;
+    var meaning = document.getElementById("meaning").value;
+    var select = document.getElementById("select").value;
+
+    if (word === "" || meaning === "" || select === "") {
+      alert("모든 필수 입력 필드를 작성해주세요.");
+      return false;
+    }
+    return true;
+  }
+</script>
+</body>
+</html>
