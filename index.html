@@ -31,6 +31,25 @@
         user-select: none;
       }
 
+      .social-icons {
+        text-align: right; /* 이미지를 오른쪽으로 정렬 */
+      }
+
+      #middle{
+        justify-content : center;
+        margin: 0 auto;
+      }
+
+      #add {
+        background-color: green; /* 녹색 배경색 지정 */
+        color: white; /* 텍스트 색상을 흰색으로 지정 (버튼 내용) */
+        border-color: green; /* 테두리 색상을 녹색으로 지정 */
+      }
+
+      #select {
+        color: black;
+      }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
@@ -45,40 +64,43 @@
   <body>
 
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <img src="/Users/sanghyunlee/IdeaProjects/WebProject2/book.png" class="mr-2" style="width: 50px; height: 50px;"> <!-- 이미지 파일의 경로를 지정하십시오 -->
-    <h5 class="my-0 mr-md-auto font-weight-normal">이상현's Vocabulary 입니다.</h5>
+    <img src="book.png" class="mr-2" style="width: 50px; height: 50px;"> <!-- 이미지 파일의 경로를 지정하십시오 -->
+    <h5 class="my-0 mr-md-auto font-weight-normal">이상현의 Vocabulary 입니다.</h5>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Featuresㅇ</a>
-      <a class="p-2 text-dark" href="#">Enterprise</a>
-      <a class="p-2 text-dark" href="#">Support</a>
-      <a class="p-2 text-dark" href="#">Pricing</a>
+      <a class="btn btn-outline-primary" href="#">Home</a>
+      <a class="p-2 text-dark" href="#">NoStyle</a>
+      <a class="p-2 text-dark" href="#">Example</a>
+      <a class="p-2 text-dark" href="#">About</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
   </div>
 
 
 
-<div class="container-fluid">
-  <div class="row">
-
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+  <div class="table-responsive mx-auto">
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+        <h1 class="h2">Word List</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group mr-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+            <form>
+              <select class="btn-sm btn-outline-secondary" id="select">
+                <option value="selected(초기선택항목으로지정)">select level</option>
+                <option value="해당항목을 선택하면 전달될값">level 1</option>
+                <option value="해당항목을 선택하면 전달될값">level 2</option>
+                <option value="해당항목을 선택하면 전달될값">level 3</option>
+              </select>
+
+              <input type="text" name="vocabulary">
+            </form>
+
           </div>
-          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-            <span data-feather="calendar"></span>
-            This week
-          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">Search</button>
+          <button type="button" class="btn btn-sm btn-outline-secondary" id="add">Add</button>
+
         </div>
       </div>
 
-
-      <h2>Section title</h2>
-      <div class="table-responsive">
+      <div class="table-responsive mx-auto">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -234,5 +256,22 @@
         <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
         <script src="dashboard.js"></script>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="bootstrap.png" alt="" width="40" height="40">
+        <small class="d-block mb-3 text-muted">&copy; 2017-2022</small>
+        <div class="social-icons">
+          <img class="mb-3" src="twitter.png" alt="" width="40" height="40">
+          <img class="mb-3" src="instagram.png" alt="" width="40" height="40">
+          <img class="mb-3" src="facebook.png" alt="" width="40" height="40">
+        </div>
+
+      </div>
+
+
+      </div>
+  </footer>
   </body>
 </html>
