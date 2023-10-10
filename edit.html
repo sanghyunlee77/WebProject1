@@ -100,7 +100,16 @@
       alert("모든 필수 입력 필드를 작성해주세요.");
       return false;
     }
-    return true;
+    else{
+      var result = confirm("정말로 삭제하시겠습니까?");
+      if(result){
+        alert("삭제 되었습니다.");
+      }else{
+        alert("삭제 명령을 취소 합니다. ");
+      }
+      return true;
+    }
+
   }
 </script>
 </body>

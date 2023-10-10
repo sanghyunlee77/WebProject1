@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3559b8a5-8ceb-467f-bfa8-29b28e8079c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hello.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="3559b8a5-8ceb-467f-bfa8-29b28e8079c0" name="Changes" comment="connect add html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +14,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sanghyunlee77"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="55a4c70d-594c-4be1-a5e1-4f760f7f20e7" />
+        <option name="url" value="https://github.com/sanghyunlee77/WebProject1.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
@@ -31,13 +47,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/sanghyunlee/IdeaProjects/WebProject2",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,11 +77,76 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696822510847</updated>
-      <workItem from="1696822511886" duration="2000" />
+      <workItem from="1696822511886" duration="17473000" />
     </task>
+    <task id="LOCAL-00001" summary="add image and make index.html file">
+      <option name="closed" value="true" />
+      <created>1696827193067</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696827193068</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add image and make index.html file">
+      <option name="closed" value="true" />
+      <created>1696827321693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696827321693</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add image and make index.html file">
+      <option name="closed" value="true" />
+      <created>1696827451438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696827451438</updated>
+    </task>
+    <task id="LOCAL-00004" summary="index page complete">
+      <option name="closed" value="true" />
+      <created>1696845006680</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696845006680</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add page complete">
+      <option name="closed" value="true" />
+      <created>1696870424433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696870424433</updated>
+    </task>
+    <task id="LOCAL-00006" summary="complete project">
+      <option name="closed" value="true" />
+      <created>1696907578667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696907578667</updated>
+    </task>
+    <task id="LOCAL-00007" summary="connect add html">
+      <option name="closed" value="true" />
+      <created>1696908446887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696908446887</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add image and make index.html file" />
+    <MESSAGE value="index page complete" />
+    <MESSAGE value="add page complete" />
+    <MESSAGE value="complete project" />
+    <MESSAGE value="connect add html" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect add html" />
   </component>
 </project>
